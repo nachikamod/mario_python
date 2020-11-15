@@ -1,0 +1,34 @@
+{
+    "ground":{
+        "patch_1":{
+            "start": 0,
+            "end": 960,
+            "elv": 620
+        },
+        "patch_2":{
+            "start": 0,
+            "end": 960,
+            "elv": 660
+        },
+        "patch_3":{
+            "start": 1120,
+            "end": 1440,
+            "elv": 620
+        },
+        "patch_4":{
+            "start": 1120,
+            "end": 1440,
+            "elv": 660
+        },
+        "patch_5":{
+            "start": 1600,
+            "end": 2320,
+            "elv": 620
+        },
+        "patch_6":{
+            "start": 1600,
+            "end": 2320,
+            "elv": 660
+        }
+    }
+}

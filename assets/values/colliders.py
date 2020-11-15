@@ -1,0 +1,2 @@
+groundCollider = []
+marioCollider = object
