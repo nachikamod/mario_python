@@ -45,7 +45,7 @@ class Settings():
 
     def buldMarioRelay(self):
         if not bools.isJump:
-            if(not bools.collide):
+            if(not bools.collideTopGround):
                 num.mario_y += 10
         return player(imParse, self.game, self.screen, num, collision).animateMario()
 

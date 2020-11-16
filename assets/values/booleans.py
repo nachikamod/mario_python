@@ -1,4 +1,8 @@
 isPlaying = True
-collide = False
+
+collideTopGround = False
+collideLeftGround = False
+collideRightGround = False
 
 isJump = False
+

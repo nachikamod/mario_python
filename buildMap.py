@@ -32,7 +32,7 @@ class BuildMap():
             for plot in range(ground['ground'][d]['start'], ground['ground'][d]['end'], 40):
                 self.scn.blit(self.imgParser(self.game, 'assets/images/static/map/ground/ground_block.png').parsedImageBroadcaster(), (plot, ground['ground'][d]['elv']))
 
-        print(self.collision.groundCollider)
+        #print(self.collision.groundCollider)
 
         groundJson.close()
 

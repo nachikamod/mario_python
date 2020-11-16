@@ -4,7 +4,7 @@ def keyEvents(pg, num, bools):
     keys = pg.key.get_pressed()
 
 
-    if(keys[pg.K_RIGHT] or keys[pg.K_d]):
+    if(keys[pg.K_RIGHT] or keys[pg.K_d]) and not bools.collideLeftGround:
         if not(((num.width/2)-20) == num.mario_x):
             num.mario_x += 10
         else:
@@ -20,12 +20,12 @@ def keyEvents(pg, num, bools):
                 json.dump(readJson, write)
                 write.close()
 
-    elif((keys[pg.K_LEFT] or keys[pg.K_a]) and num.mario_x > 0):
+    elif((keys[pg.K_LEFT] or keys[pg.K_a]) and num.mario_x > 0) and bools.collideRightGround:
         num.mario_x -= 10
 
     if not bools.isJump:
         if keys[pg.K_SPACE] or keys[pg.K_w] or keys[pg.K_UP]:
-            bools.isJump = bools.collide
+            bools.isJump = bools.collideTopGround
             
     else:
         if num.jumpCount >= -10:
